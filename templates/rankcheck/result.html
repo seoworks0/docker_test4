@@ -1,0 +1,33 @@
+{% extends 'admin/base_site.html' %}
+
+{% block content %}
+<table>
+<thead>
+  <tr>
+  <th>keyword</th>
+  <th>date</th>
+  <th>today's rank</th>
+  <th>URL</th>
+  </tr>
+<tbody>
+{% for ranklist in ranks %}
+    <tr>{% for rank in ranklist %}
+      {% if forloop.counter  ==  1 %}
+      <td style="width:25%;border:solid 1px black;color:red;">{{ rank }}</td>
+      {% endif %}
+      {% if forloop.counter == 2 %}
+      <td style="width:25%;border:solid 1px black;color:blue;">{{ rank }}</td>
+      {% endif %}
+      {% if forloop.counter == 3 %}
+      <td style="width:25%;border:solid 1px black;color:green;">{{ rank }}</td>
+      {% endif %}
+      {% if forloop.counter == 4 %}
+      <td style="width:25%;border:solid 1px black;color:purple;"><a href="{{ rank }}" target="_blank">{{ rank }}</a></td>
+      {% endif %}
+    {% endfor %}</tr>
+{% endfor %}
+</tbody>
+</table>
+
+
+{% endblock %}
