@@ -18,14 +18,14 @@ def index(request):
         form.save()
         keyword = request.POST['text']
         ownurl = request.POST['ownurl']
-        result = [["keyword","2018/03/14","10","https://to-kei.net"]]
+        #result = [["keyword","2018/03/14","10","https://to-kei.net"]]
 
-        """for i,key in enumerate(keyword.split("\n")):
+        for i,key in enumerate(keyword.split("\n")):
             rank,r_url=main(key,ownurl)
             date = datetime.date.today().strftime('%x')
             result1 = [key,date,rank,r_url]
             print(result1)
-            result += [result1]"""
+            result += [result1]
         #print(ownurl)
 
 

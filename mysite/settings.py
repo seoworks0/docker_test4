@@ -41,12 +41,14 @@ SECRET_KEY = 'm)puk@ux(w%6ffpo+-36$4r@5umgss5c++5z-2s%^kxzeatv6('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['silly-brahmagupta-1755.arukascloud.io']
+ALLOWED_HOSTS = []
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'kyokigo.apps.KyokigoConfig',
+    'suggestnet.apps.SuggestnetConfig',
     'rankcheck.apps.RankcheckConfig',
     'django.contrib.admin',
     'django.contrib.auth',

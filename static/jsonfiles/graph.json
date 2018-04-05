@@ -1,0 +1,654 @@
+{
+    "graph": [],
+    "links": [
+        {
+            "source": 0,
+            "target": 1
+        },
+        {
+            "source": 1,
+            "target": 2
+        },
+        {
+            "source": 1,
+            "target": 3
+        },
+        {
+            "source": 1,
+            "target": 4
+        },
+        {
+            "source": 1,
+            "target": 5
+        },
+        {
+            "source": 1,
+            "target": 6
+        },
+        {
+            "source": 1,
+            "target": 7
+        },
+        {
+            "source": 1,
+            "target": 8
+        },
+        {
+            "source": 1,
+            "target": 9
+        },
+        {
+            "source": 1,
+            "target": 10
+        },
+        {
+            "source": 1,
+            "target": 11
+        },
+        {
+            "source": 0,
+            "target": 12
+        },
+        {
+            "source": 0,
+            "target": 13
+        },
+        {
+            "source": 13,
+            "target": 14
+        },
+        {
+            "source": 13,
+            "target": 15
+        },
+        {
+            "source": 13,
+            "target": 16
+        },
+        {
+            "source": 13,
+            "target": 17
+        },
+        {
+            "source": 13,
+            "target": 18
+        },
+        {
+            "source": 0,
+            "target": 19
+        },
+        {
+            "source": 19,
+            "target": 20
+        },
+        {
+            "source": 19,
+            "target": 21
+        },
+        {
+            "source": 19,
+            "target": 22
+        },
+        {
+            "source": 19,
+            "target": 23
+        },
+        {
+            "source": 0,
+            "target": 24
+        },
+        {
+            "source": 24,
+            "target": 25
+        },
+        {
+            "source": 24,
+            "target": 26
+        },
+        {
+            "source": 24,
+            "target": 27
+        },
+        {
+            "source": 0,
+            "target": 28
+        },
+        {
+            "source": 28,
+            "target": 29
+        },
+        {
+            "source": 28,
+            "target": 30
+        },
+        {
+            "source": 0,
+            "target": 31
+        },
+        {
+            "source": 31,
+            "target": 32
+        },
+        {
+            "source": 31,
+            "target": 33
+        },
+        {
+            "source": 31,
+            "target": 34
+        },
+        {
+            "source": 31,
+            "target": 35
+        },
+        {
+            "source": 31,
+            "target": 36
+        },
+        {
+            "source": 31,
+            "target": 37
+        },
+        {
+            "source": 31,
+            "target": 38
+        },
+        {
+            "source": 31,
+            "target": 39
+        },
+        {
+            "source": 31,
+            "target": 40
+        },
+        {
+            "source": 0,
+            "target": 41
+        },
+        {
+            "source": 41,
+            "target": 42
+        },
+        {
+            "source": 0,
+            "target": 43
+        },
+        {
+            "source": 43,
+            "target": 44
+        },
+        {
+            "source": 0,
+            "target": 45
+        },
+        {
+            "source": 45,
+            "target": 46
+        },
+        {
+            "source": 45,
+            "target": 47
+        },
+        {
+            "source": 45,
+            "target": 48
+        },
+        {
+            "source": 45,
+            "target": 49
+        },
+        {
+            "source": 45,
+            "target": 50
+        },
+        {
+            "source": 0,
+            "target": 51
+        },
+        {
+            "source": 51,
+            "target": 52
+        },
+        {
+            "source": 51,
+            "target": 53
+        },
+        {
+            "source": 0,
+            "target": 54
+        },
+        {
+            "source": 0,
+            "target": 55
+        },
+        {
+            "source": 0,
+            "target": 56
+        },
+        {
+            "source": 0,
+            "target": 57
+        },
+        {
+            "source": 0,
+            "target": 58
+        },
+        {
+            "source": 58,
+            "target": 59
+        },
+        {
+            "source": 0,
+            "target": 60
+        },
+        {
+            "source": 0,
+            "target": 61
+        },
+        {
+            "source": 0,
+            "target": 62
+        },
+        {
+            "source": 62,
+            "target": 63
+        },
+        {
+            "source": 62,
+            "target": 64
+        }
+    ],
+    "nodes": [
+        {
+            "size": 150,
+            "color": "#DA6272",
+            "keyword": "データサイエンティスト"
+        },
+        {
+            "size": 60,
+            "color": "#F3C759",
+            "keyword": "協会",
+            "number": 1
+        },
+        {
+            "size": 10,
+            "color": "#F3C759",
+            "keyword": " スキルセット",
+            "number": 2
+        },
+        {
+            "size": 10,
+            "color": "#F3C759",
+            "keyword": " スキルチェック",
+            "number": 3
+        },
+        {
+            "size": 10,
+            "color": "#F3C759",
+            "keyword": " 資格",
+            "number": 4
+        },
+        {
+            "size": 10,
+            "color": "#F3C759",
+            "keyword": " シンポジウム",
+            "number": 5
+        },
+        {
+            "size": 10,
+            "color": "#F3C759",
+            "keyword": " スキル",
+            "number": 6
+        },
+        {
+            "size": 10,
+            "color": "#F3C759",
+            "keyword": " セミナー",
+            "number": 7
+        },
+        {
+            "size": 10,
+            "color": "#F3C759",
+            "keyword": " 講座",
+            "number": 8
+        },
+        {
+            "size": 10,
+            "color": "#F3C759",
+            "keyword": " 養成講座",
+            "number": 9
+        },
+        {
+            "size": 10,
+            "color": "#F3C759",
+            "keyword": " 理事",
+            "number": 10
+        },
+        {
+            "size": 10,
+            "color": "#F3C759",
+            "keyword": " 会費",
+            "number": 11
+        },
+        {
+            "size": 60,
+            "color": "#C0D860",
+            "keyword": "とは",
+            "number": 12
+        },
+        {
+            "size": 60,
+            "color": "#5EC84E",
+            "keyword": " 求人",
+            "number": 13
+        },
+        {
+            "size": 10,
+            "color": "#5EC84E",
+            "keyword": "  大阪",
+            "number": 14
+        },
+        {
+            "size": 10,
+            "color": "#5EC84E",
+            "keyword": "  新卒",
+            "number": 15
+        },
+        {
+            "size": 10,
+            "color": "#5EC84E",
+            "keyword": "  東京",
+            "number": 16
+        },
+        {
+            "size": 10,
+            "color": "#5EC84E",
+            "keyword": "  未経験",
+            "number": 17
+        },
+        {
+            "size": 10,
+            "color": "#5EC84E",
+            "keyword": "  外資系",
+            "number": 18
+        },
+        {
+            "size": 60,
+            "color": "#3DB680",
+            "keyword": " 年収",
+            "number": 19
+        },
+        {
+            "size": 10,
+            "color": "#3DB680",
+            "keyword": "  アメリカ",
+            "number": 20
+        },
+        {
+            "size": 10,
+            "color": "#3DB680",
+            "keyword": "  平均",
+            "number": 21
+        },
+        {
+            "size": 10,
+            "color": "#3DB680",
+            "keyword": "アクセンチュア  ",
+            "number": 22
+        },
+        {
+            "size": 10,
+            "color": "#3DB680",
+            "keyword": "リクルート  ",
+            "number": 23
+        },
+        {
+            "size": 60,
+            "color": "#40BFB0",
+            "keyword": " スキル",
+            "number": 24
+        },
+        {
+            "size": 10,
+            "color": "#40BFB0",
+            "keyword": "  定義",
+            "number": 25
+        },
+        {
+            "size": 10,
+            "color": "#40BFB0",
+            "keyword": " 必要 ",
+            "number": 26
+        },
+        {
+            "size": 10,
+            "color": "#40BFB0",
+            "keyword": " 必須 ",
+            "number": 27
+        },
+        {
+            "size": 60,
+            "color": "#42AAC7",
+            "keyword": " 講座",
+            "number": 28
+        },
+        {
+            "size": 10,
+            "color": "#42AAC7",
+            "keyword": "  無料",
+            "number": 29
+        },
+        {
+            "size": 10,
+            "color": "#42AAC7",
+            "keyword": "  総務省",
+            "number": 30
+        },
+        {
+            "size": 60,
+            "color": "#44A5CB",
+            "keyword": "養成読本",
+            "number": 31
+        },
+        {
+            "size": 10,
+            "color": "#44A5CB",
+            "keyword": " 登竜門編",
+            "number": 32
+        },
+        {
+            "size": 10,
+            "color": "#44A5CB",
+            "keyword": " 機械学習入門編",
+            "number": 33
+        },
+        {
+            "size": 10,
+            "color": "#44A5CB",
+            "keyword": " pdf",
+            "number": 34
+        },
+        {
+            "size": 10,
+            "color": "#44A5CB",
+            "keyword": " r活用編",
+            "number": 35
+        },
+        {
+            "size": 10,
+            "color": "#44A5CB",
+            "keyword": " 機械学習",
+            "number": 36
+        },
+        {
+            "size": 10,
+            "color": "#44A5CB",
+            "keyword": " プロになるためのデータ分析力が身につく",
+            "number": 37
+        },
+        {
+            "size": 10,
+            "color": "#44A5CB",
+            "keyword": " 技術評論社",
+            "number": 38
+        },
+        {
+            "size": 10,
+            "color": "#44A5CB",
+            "keyword": " 機械学習入門",
+            "number": 39
+        },
+        {
+            "size": 10,
+            "color": "#44A5CB",
+            "keyword": " python",
+            "number": 40
+        },
+        {
+            "size": 60,
+            "color": "#6A8CC7",
+            "keyword": " 本",
+            "number": 41
+        },
+        {
+            "size": 10,
+            "color": "#6A8CC7",
+            "keyword": "  おすすめ",
+            "number": 42
+        },
+        {
+            "size": 60,
+            "color": "#8B90BE",
+            "keyword": " 企業",
+            "number": 43
+        },
+        {
+            "size": 10,
+            "color": "#8B90BE",
+            "keyword": "  ランキング",
+            "number": 44
+        },
+        {
+            "size": 60,
+            "color": "#CE579B",
+            "keyword": " 資格",
+            "number": 45
+        },
+        {
+            "size": 10,
+            "color": "#CE579B",
+            "keyword": "  難易度",
+            "number": 46
+        },
+        {
+            "size": 10,
+            "color": "#CE579B",
+            "keyword": "  emc",
+            "number": 47
+        },
+        {
+            "size": 10,
+            "color": "#CE579B",
+            "keyword": "  費用",
+            "number": 48
+        },
+        {
+            "size": 10,
+            "color": "#CE579B",
+            "keyword": "  価格",
+            "number": 49
+        },
+        {
+            "size": 10,
+            "color": "#CE579B",
+            "keyword": " 転職 ",
+            "number": 50
+        },
+        {
+            "size": 60,
+            "color": "#C35B9D",
+            "keyword": " 転職",
+            "number": 51
+        },
+        {
+            "size": 10,
+            "color": "#C35B9D",
+            "keyword": "  エージェント",
+            "number": 52
+        },
+        {
+            "size": 10,
+            "color": "#C35B9D",
+            "keyword": "  資格",
+            "number": 53
+        },
+        {
+            "size": 60,
+            "color": "#F9DB57",
+            "keyword": " 勉強",
+            "number": 54
+        },
+        {
+            "size": 60,
+            "color": "#FFEE55",
+            "keyword": " とは",
+            "number": 55
+        },
+        {
+            "size": 60,
+            "color": "#E4EC5B",
+            "keyword": " ai",
+            "number": 56
+        },
+        {
+            "size": 60,
+            "color": "#45A1CF",
+            "keyword": " amazon",
+            "number": 57
+        },
+        {
+            "size": 60,
+            "color": "#E6855E",
+            "keyword": " アナリスト",
+            "number": 58
+        },
+        {
+            "size": 10,
+            "color": "#E6855E",
+            "keyword": "  違い",
+            "number": 59
+        },
+        {
+            "size": 60,
+            "color": "#D45D87",
+            "keyword": " アクチュアリー",
+            "number": 60
+        },
+        {
+            "size": 60,
+            "color": "#9499C5",
+            "keyword": " aiエンジニア",
+            "number": 61
+        },
+        {
+            "size": 60,
+            "color": "#7F96CA",
+            "keyword": " アメリカ",
+            "number": 62
+        },
+        {
+            "size": 10,
+            "color": "#7F96CA",
+            "keyword": " 大学院 ",
+            "number": 63
+        },
+        {
+            "size": 10,
+            "color": "#7F96CA",
+            "keyword": "  年収",
+            "number": 64
+        }
+    ],
+    "directed": "false",
+    "multigraph": "false"
+}

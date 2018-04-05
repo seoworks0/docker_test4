@@ -23,4 +23,6 @@ admin.site.index_title = 'tools'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('rankcheck/', include('rankcheck.urls')),
+    path('suggestnet/', include('suggestnet.urls')),
+    path('kyokigo/', include('kyokigo.urls')),
 ]
