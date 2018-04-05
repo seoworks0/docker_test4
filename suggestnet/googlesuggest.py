@@ -42,7 +42,7 @@ class GoogleAutoComplete:
             a = a[:-3]
             suggest_list.append(a)
         print(suggest_list)
-        sleep(3)
+        sleep(1)
         return suggest_list
 
     def get_suggest_with_one_char(self, query):
