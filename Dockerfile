@@ -1,5 +1,5 @@
 FROM python:3-alpine
-ENV PYTHONUNBUFFERED 1
+ENV PYTHONUNBUFFERED 1 noninteractive
 RUN apt-get update
 RUN apt-get -y upgrade
 RUN apt-get -y install wget g++ make golang mercurial
