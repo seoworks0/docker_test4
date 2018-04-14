@@ -1,2 +1,10 @@
 Django>=1.8,<2.1
 PyMySQL
+mecab-python3
+django-debug-toolbar
+google
+Janome
+jsonschema
+nltk==3.2.5
+numpy==1.13.3
+pandas==0.22.0

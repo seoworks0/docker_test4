@@ -13,11 +13,14 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 def index(request):
     form = Kyokigo_Form(request.POST or None)
     result = []
+    kyokigo_n = []
+    kyokigo_v = []
 
     if request.method == 'POST' and form.is_valid():
         form.save()
         keyword = request.POST['text']
-        #kyoukigo_v,kyokigo_n = main(keyword)
+        #kyokigo_v,kyokigo_n = main(keyword)
+        #result = [["kyokigo_n","kyoukigo_v"]]
         result = [["keyword","2018/03/14","10","https://to-kei.net"]]
 
 

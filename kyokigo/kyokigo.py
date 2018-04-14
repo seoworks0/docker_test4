@@ -3,10 +3,9 @@ from urllib.request import Request, urlopen
 from urllib.error import URLError
 import sys
 import MeCab
-from normalize import normalize
-from googlesuggest import googlesuggest
-#from serps import g_serps
-from stopwords1 import stopwords
+from .normalize import normalize
+from .serps import g_serps
+from .stopwords1 import stopwords
 import codecs as cd
 import gensim
 from janome.tokenizer import Tokenizer
@@ -136,24 +135,32 @@ def make_corpus(dictionary,list3,text):
     corpus = gensim.corpora.TextCorpus('cop.mm')
     return corpus
 
+def kyokilist(dic,text):
+    kyoki_list = []
+    for word in dic.keys():
+        for text1 in text:
+            try:
+                doc = re.findall('...................................' + word + "......", text1[1])
+                kyoki_list.append( doc[0] + text1[0])
+                break
+            except:
+                pass
+    return kyoki_list
 
 
-def main(phrase):
+def main():
     phrase = ("結婚式 招待状")
-    #phrase_list = googsuggest(phrase)
     maxrank = 1
     #urls = g_serps(phrase,maxrank)
     urls = ['https://hagelabo.jp/articles/3041', 'https://customlife-media.jp/hairgrowth-marketsales']
     list3,list6,text = url2text(urls,phrase)
     dictionary_noun = make_dictionary(list3)
     dictionary_verb = make_dictionary(list6)
-    for word in dictionary_verb.keys():
-        for text1 in text:
-            try:
-                doc = re.findall('...................................' + word + "......", text1[1])
-                print(doc[0] + text1[0])
-                break
-            except:
-                pass
-    return
-    #corpus = make_corpus(dictionary,list3,text)
+    nounlist = kyokilist(dictionary_noun,text)
+    verblist = kyokilist(dictionary_verb,text)
+
+    #print(nounlist,verblist)
+
+    return nounlist,verblist
+
+main()
