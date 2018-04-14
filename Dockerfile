@@ -1,7 +1,6 @@
 FROM python:3-alpine
-ENV PYTHONUNBUFFERED 1 noninteractive
-RUN apt-get update
-RUN apt-get -y upgrade
+ENV PYTHONUNBUFFERED 1 
+
 RUN apt-get -y install wget g++ make golang mercurial
 
 RUN cd /root; wget https://mecab.googlecode.com/files/mecab-0.996.tar.gz
