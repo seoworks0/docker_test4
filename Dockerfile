@@ -8,7 +8,7 @@ RUN apt-get install -y wget
 # Mecab
 RUN wget -O mecab-ipadic-2.7.0-20070801.tar.gz "https://drive.google.com/uc?export=download&id=0B4y35FiV1wh7MWVlSDBCSXZMTXM"
 RUN tar zxvf mecab-ipadic-2.7.0-20070801.tar.gz
-RUN cd mecab-ipadic-2.7.0-20070801; ./configure; make
+RUN cd mecab-ipadic-2.7.0-20070801; ./configure --enable-utf8-only; make; make install; ldconfig
 
 # Ipadic
 RUN curl -O https://mecab.googlecode.com/files/mecab-ipadic-2.7.0-20070801.tar.gz
