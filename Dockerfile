@@ -1,4 +1,4 @@
-#FROM ubuntu:latest
+FROM ubuntu:latest
 
 # Build essentials
 RUN apt-get update
