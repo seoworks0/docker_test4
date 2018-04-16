@@ -6,7 +6,7 @@ RUN apt-get install -y curl build-essential
 
 # Mecab
 RUN wget -O mecab-ipadic-2.7.0-20070801.tar.gz "https://drive.google.com/uc?export=download&id=0B4y35FiV1wh7MWVlSDBCSXZMTXM"; \
-    tar zxvf mecab-0.996.tar.gz; \
+    tar zxvf mecab-ipadic-2.7.0-20070801.tar.gz; \
     cd mecab-0.996; ./configure; make
 
 # Ipadic
