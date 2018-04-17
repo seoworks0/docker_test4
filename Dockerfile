@@ -11,10 +11,10 @@ RUN tar zxvf mecab-ipadic-2.7.0-20070801.tar.gz
 RUN cd mecab-ipadic-2.7.0-20070801; ./configure --enable-utf8-only; make; make install; ldconfig
 
 # Ipadic
-RUN wget -O mecab-ipadic-2.7.0-20070801.tar.gz "https://drive.google.com/uc?export=download&id=0B4y35FiV1wh7MWVlSDBCSXZMTXM"
-RUN tar zxvf mecab-ipadic-2.7.0-20070801.tar.gz
-RUN cd mecab-ipadic-2.7.0-20070801; ./configure --with-charset=utf8; make; make install
-RUN echo "dicdir = /usr/local/lib/mecab/dic/ipadic" > /usr/local/etc/mecabrc
+#RUN wget -O mecab-ipadic-2.7.0-20070801.tar.gz "https://drive.google.com/uc?export=download&id=0B4y35FiV1wh7MWVlSDBCSXZMTXM"
+#RUN tar zxvf mecab-ipadic-2.7.0-20070801.tar.gz
+#RUN cd mecab-ipadic-2.7.0-20070801; ./configure --with-charset=utf8; make; make install
+#RUN echo "dicdir = /usr/local/lib/mecab/dic/ipadic" > /usr/local/etc/mecabrc
 
 # Clean up
 RUN apt-get remove -y build-essential
