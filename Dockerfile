@@ -24,18 +24,15 @@
 #RUN rm -rf mecab-0.996.tar.gz*
 #RUN rm -rf mecab-ipadic-2.7.0-20070801*
 
-FROM intimatemerger/mecab-python:0.996-alpine
-COPY mecabrc /usr/local/etc/mecabrc
-
-RUN apk add --no-cache --virtual=build-deps git bash curl file openssl sudo perl && \
-    git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git /tmp/neologd && \
-    /tmp/neologd/bin/install-mecab-ipadic-neologd -n -y && \
-    apk del build-deps && \
-    rm -rf /tmp/neologd
-
-CMD ["/usr/local/bin/mecab"]
 
 FROM python:3-alpine
+RUN apt-get update && \
+    apt-get install -y mecab=0.996-1.1 \
+                       libmecab-dev=0.996-1.1 \
+                       mecab-ipadic-utf8 && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/* && \
+    pip install mecab-python==0.996
 ENV PYTHONUNBUFFERED 1
 RUN mkdir /code
 WORKDIR /code
