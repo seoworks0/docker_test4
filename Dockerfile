@@ -23,9 +23,9 @@
 #RUN echo "dicdir = /usr/local/lib/mecab/dic/ipadic" > /usr/local/etc/mecabrc
 
 # Clean up
-RUN apt-get remove -y build-essential
-RUN rm -rf mecab-0.996.tar.gz*
-RUN rm -rf mecab-ipadic-2.7.0-20070801*
+#RUN apt-get remove -y build-essential
+#RUN rm -rf mecab-0.996.tar.gz*
+#RUN rm -rf mecab-ipadic-2.7.0-20070801*
 
 FROM python:3-alpine
 ENV PYTHONUNBUFFERED 1 
