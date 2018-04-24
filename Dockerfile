@@ -24,8 +24,7 @@
 #RUN rm -rf mecab-0.996.tar.gz*
 #RUN rm -rf mecab-ipadic-2.7.0-20070801*
 
-
-FROM python:3-alpine
+FROM intimatemerger/mecab-python:0.996-alpine
 COPY mecabrc /usr/local/etc/mecabrc
 
 RUN apk add --no-cache --virtual=build-deps git bash curl file openssl sudo perl && \
@@ -35,6 +34,8 @@ RUN apk add --no-cache --virtual=build-deps git bash curl file openssl sudo perl
     rm -rf /tmp/neologd
 
 CMD ["/usr/local/bin/mecab"]
+
+FROM python:3-alpine
 ENV PYTHONUNBUFFERED 1
 RUN mkdir /code
 WORKDIR /code
