@@ -26,13 +26,6 @@
 
 
 FROM python:3-alpine
-RUN apt-get update
-RUN apt-get install -y mecab=0.996-1.1
-RUN libmecab-dev=0.996-1.1
-RUN mecab-ipadic-utf8
-RUN apt-get clean
-RUN rm -rf /var/lib/apt/lists/*
-RUN pip install mecab-python==0.996
 ENV PYTHONUNBUFFERED 1
 RUN mkdir /code
 WORKDIR /code
