@@ -2,7 +2,7 @@ import urllib.request, urllib.error
 from urllib.request import Request, urlopen
 from urllib.error import URLError
 import sys
-import MeCab
+#import MeCab
 from .normalize import normalize
 from .serps import g_serps
 from .stopwords1 import stopwords
