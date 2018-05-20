@@ -64,6 +64,7 @@ RUN cd /opt/downloads/mecab-ipadic-neologd && \
     ./bin/install-mecab-ipadic-neologd -n -y
 
 RUN pip install gensim mecab-python3
+RUN pip install -r requirements.txt
 
 WORKDIR /usr/src/app/
 
