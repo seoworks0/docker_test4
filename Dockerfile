@@ -34,7 +34,7 @@
 # ADD . /code/
 
 FROM python:3.6.4-slim-stretch
-
+ENV PYTHONUNBUFFERED 1
 RUN apt-get update && \
     apt-get -y install sudo \
     git \
@@ -71,5 +71,3 @@ RUN pip install PyMySQL
 #RUN pip install -r requirements.txt
 
 WORKDIR /usr/src/app/
-
-ENTRYPOINT tail -f /dev/null
