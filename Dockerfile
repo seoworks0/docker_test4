@@ -64,7 +64,7 @@ RUN cd /opt/downloads/mecab-ipadic-neologd && \
     ./bin/install-mecab-ipadic-neologd -n -y
 
 RUN pip install gensim mecab-python3
-RUN pip install Django>=1.8,<2.1
+RUN pip install Django
 RUN pip install nltk
 RUN pip install bs4
 RUN pip install PyMySQL
