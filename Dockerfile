@@ -34,6 +34,9 @@
 # ADD . /code/
 
 FROM python:3.6.4-slim-stretch
+COPY . .
+EXPOSE 8000
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
 ENV PYTHONUNBUFFERED 1
 RUN apt-get update && \
     apt-get -y install sudo \
