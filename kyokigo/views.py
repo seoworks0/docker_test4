@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse_lazy
 from django.views import generic
 from .forms import Kyokigo_Form
-#from .kyokigo import main
+from .kyokigo import main
 from django.http import HttpResponse
 import datetime
 import csv
