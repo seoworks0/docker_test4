@@ -59,7 +59,7 @@ RUN cd /opt/downloads/mecab/mecab && \
     make check && \
     make install
 
-RUN apt-get -y install 
+RUN apt-get -y install
 RUN cd /opt/downloads/mecab-ipadic-neologd && \
     ./bin/install-mecab-ipadic-neologd -n -y
 
@@ -68,6 +68,8 @@ RUN pip install Django
 RUN pip install nltk
 RUN pip install bs4
 RUN pip install PyMySQL
+RUN pip install pandas
+RUN pip install retry
 #RUN pip install -r requirements.txt
 
 WORKDIR /usr/src/app/

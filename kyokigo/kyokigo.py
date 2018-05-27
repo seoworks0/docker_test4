@@ -2,13 +2,13 @@ import urllib.request, urllib.error
 from urllib.request import Request, urlopen
 from urllib.error import URLError
 import sys
-#import MeCab
+import MeCab
 from .normalize import normalize
 from .serps import g_serps
 from .stopwords1 import stopwords
 import codecs as cd
 import gensim
-from janome.tokenizer import Tokenizer
+#from janome.tokenizer import Tokenizer
 from gensim import corpora, models, similarities
 from bs4 import BeautifulSoup
 import pandas
@@ -68,7 +68,10 @@ def url2text(urls,phrase):
     j = 0
     for url in urls:
         print(url+"の内容を取得しています。")
-        html = url_req(url)
+        try:
+            html = url_req(url)
+        except:
+            break
         text1 = soup(html)
         list1 = [url,text1]
         text2 +=[list1]
@@ -77,35 +80,37 @@ def url2text(urls,phrase):
         list_verb.append(list3)
     return list_noun,list_verb,text2
 
-@retry()
+@retry(tries=4)
 def url_req(url):
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     html = urllib.request.urlopen(req)
     return html
 
 def soup(html):
-    soup = BeautifulSoup(html, "html.parser")
-    soup_title = soup.find_all("title")
-    soup_h1 = soup.find_all("h1")
-    soup_h2 = soup.find_all("h2")
-    soup_h3 = soup.find_all("h3")
-    soup_h4 = soup.find_all("h4")
-    soup_h5 = soup.find_all("h5")
-    soup_h6 = soup.find_all("h6")
-    soup_a = soup.find_all("a")
-    soup_p = soup.find_all("p")
-    soup_li = soup.find_all("li")
-    soup_dd = soup.find_all("dd")
-    soup_dt = soup.find_all("dt")
-    soup_table = soup.find_all("table")
+    try:
+        soup = BeautifulSoup(html, "html.parser")
+        soup_title = soup.find_all("title")
+        soup_h1 = soup.find_all("h1")
+        soup_h2 = soup.find_all("h2")
+        soup_h3 = soup.find_all("h3")
+        soup_h4 = soup.find_all("h4")
+        soup_h5 = soup.find_all("h5")
+        soup_h6 = soup.find_all("h6")
+        soup_a = soup.find_all("a")
+        soup_p = soup.find_all("p")
+        soup_li = soup.find_all("li")
+        soup_dd = soup.find_all("dd")
+        soup_dt = soup.find_all("dt")
+        soup_table = soup.find_all("table")
 
+        soup=soup_title+soup_h1+soup_h2+soup_h3+soup_h4+soup_h5+soup_h6+soup_a+soup_p+soup_li+soup_dd+soup_dt+soup_table
 
-    soup=soup_title+soup_h1+soup_h2+soup_h3+soup_h4+soup_h5+soup_h6+soup_a+soup_p+soup_li+soup_dd+soup_dt+soup_table
-
-    maped_list = map(str, soup)
-    soup1 = ', '.join(maped_list)
-    soup2 = BeautifulSoup(soup1, "html.parser")
-    text = soup2.get_text()
+        maped_list = map(str, soup)
+        soup1 = ', '.join(maped_list)
+        soup2 = BeautifulSoup(soup1, "html.parser")
+        text = soup2.get_text()
+    except:
+        text=""
     return text
 
 def make_dictionary(list3):
@@ -141,18 +146,18 @@ def kyokilist(dic,text):
         for text1 in text:
             try:
                 doc = re.findall('...................................' + word + "......", text1[1])
-                kyoki_list.append( doc[0] + text1[0])
+                list1 = [word,doc[0],text1[0]]
+                kyoki_list+=[list1]
                 break
             except:
                 pass
     return kyoki_list
 
 
-def main():
-    phrase = ("結婚式 招待状")
+def kyoki(phrase):
     maxrank = 1
-    #urls = g_serps(phrase,maxrank)
-    urls = ['https://hagelabo.jp/articles/3041', 'https://customlife-media.jp/hairgrowth-marketsales']
+    urls = g_serps(phrase,maxrank)
+    #urls = ['https://hagelabo.jp/articles/3041', 'https://customlife-media.jp/hairgrowth-marketsales']
     list3,list6,text = url2text(urls,phrase)
     dictionary_noun = make_dictionary(list3)
     dictionary_verb = make_dictionary(list6)
@@ -162,5 +167,3 @@ def main():
     #print(nounlist,verblist)
 
     return nounlist,verblist
-
-main()
