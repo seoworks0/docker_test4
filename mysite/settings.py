@@ -41,12 +41,14 @@ SECRET_KEY = 'm)puk@ux(w%6ffpo+-36$4r@5umgss5c++5z-2s%^kxzeatv6('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'test2.apps.Test2Config',
+    'test1.apps.Test1Config',
     'kyokigo.apps.KyokigoConfig',
     'suggestnet.apps.SuggestnetConfig',
     'rankcheck.apps.RankcheckConfig',

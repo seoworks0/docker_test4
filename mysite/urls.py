@@ -25,4 +25,6 @@ urlpatterns = [
     path('rankcheck/', include('rankcheck.urls')),
     path('suggestnet/', include('suggestnet.urls')),
     path('kyokigo/', include('kyokigo.urls')),
+    path('test1/', include('test1.urls')),
+    path('test2/', include('test2.urls')),
 ]
